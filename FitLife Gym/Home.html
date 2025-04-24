@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - FitLife Gym</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>/* Basic reset for margin and padding */
+    body, h1, h2, h3, h4, p, a, img {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    .header {
+        background: #333;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .header h1 {
+        margin-bottom: 0.5rem;
+    }
+    
+    .main-content {
+        padding: 2rem 1rem;
+        max-width: 1000px;
+        margin: 2rem auto;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .hero-section {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-section p {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .cta-button {
+        background: #e94e77;
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        display: inline-block;
+    }
+    
+    .cta-button:hover {
+        background: #d43f63;
+    }
+    
+    .gym-benefits {
+        margin-bottom: 2rem;
+    }
+    
+    .gym-benefits h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .benefit {
+        margin-bottom: 1.5rem;
+    }
+    
+    .benefit h4 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .benefit p {
+        font-size: 1rem;
+    }
+    
+    .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adds space between images */
+    justify-content: center;
+    }
+
+    .gallery img {
+    width: calc(25% - 1rem); /* Adjust width to account for gaps */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for effects */
+    }
+
+    .gallery img:hover {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds shadow effect on hover */
+    }
+
+
+    
+    .reviews {
+        margin-bottom: 2rem;
+    }
+    
+    .reviews h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .review {
+        background: #f9f9f9;
+        border-left: 5px solid #e94e77;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+    }
+    
+    .footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+    
+    .footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .footer a:hover {
+        text-decoration: underline;
+    }
+
+      /* Basic reset for margin and padding */
+body h2 {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+}
+
+.main-content {
+    flex: 1; /* Make main content take up available space */
+    padding: 2rem;
+    max-width: 1000px; /* Set a maximum width for content */
+    margin: 0 auto; /* Center the content */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.marquee-container {
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.marquee {
+    display: flex;
+    width: 100%;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee-item {
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.facility-box {
+    background: #444;
+    border-radius: 8px;
+    color: #fff;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.navigation {
+        margin-top: 1rem;
+    }
+
+    .navigation a {
+        color: #fff;
+        margin: 0 1rem;
+        font-weight: bold;
+    }
+
+    .navigation a:hover {
+        text-decoration: underline;
+    }
+    </style>
+<body>
+    <div class="header">
+        <h1>FitLife Gym</h1>
+        <div class="navigation">
+            <a href="Home.html">Home</a>
+            <a href="classes.html">Classes</a>
+            <a href="trainers.html">Trainers</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="free_trial.html">Free Trial</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="hero-section">
+            <h2>Welcome to FitLife Gym</h2>
+            <p>Transform your life with our state-of-the-art facilities, expert trainers, and a supportive community. Achieve your fitness goals and embrace a healthier, happier you!</p>
+            <a href="join_now.html" class="cta-button">Join Now</a>
+        </div>
+
+        <div class="gym-benefits">
+            <h3>Why Choose FitLife Gym?</h3>
+            <div class="benefit">
+                <h4>Modern Equipment</h4>
+                <p>Our gym is equipped with the latest fitness technology to help you get the most out of your workouts.</p>
+            </div>
+            <div class="benefit">
+                <h4>Expert Trainers</h4>
+                <p>Our certified trainers are here to provide personalized guidance and support to help you reach your fitness goals.</p>
+            </div>
+            <div class="benefit">
+                <h4>Variety of Classes</h4>
+                <p>From high-intensity interval training (HIIT) to yoga and pilates, we offer a wide range of classes to suit every fitness level and interest.</p>
+            </div>
+            <div class="benefit">
+                <h4>Community Support</h4>
+                <p>Join a community of like-minded individuals who motivate and inspire each other to stay active and healthy.</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <h2>Our Facilities</h2>
+    
+            <div class="marquee-container">
+                <div class="marquee">
+                    <div class="marquee-item">
+                        <div class="facility-box">Wide range of exercise equipment</div>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="facility-box">Functional training tools</div>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="facility-box">State-of-the-art machines</div>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="facility-box">Regular equipment maintenance and upgrades</div>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="facility-box">Qualified personal trainers</div>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="facility-box">Individualized training programs</div>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="facility-box">Group fitness classes</div>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="facility-box">Nutritional guidance</div>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="facility-box">Small group personal training</div>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="facility-box">Locker rooms</div>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="facility-box">Showers</div>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="facility-box">Healthy snack bar or juice bar</div>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="facility-box">Physical therapy services</div>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="facility-box">Wi-Fi access</div>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="facility-box">Parking facilities</div>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="facility-box">Towel service</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviews">
+            <h3>What Our Members Say</h3>
+            <div class="review">
+                <p>"FitLife Gym has completely transformed my fitness journey. The trainers are incredibly supportive, and the community is amazing!" - Alex. M</p>
+            </div>
+            <div class="review">
+                <p>"I love the variety of classes available. There’s something for everyone, and the equipment is top-notch!" - Jamie. R</p>
+            </div>
+            <div class="review">
+                <p>"It's a wonderful place. If you want to get in shape, I highly recommend this place. Trainers are very helpful and awesome, they make you feel really comfortable." - vigu</p>
+            </div>
+            <div class="review">
+                <p>"Gym has everything you need. It’s also very very clean. They offer protein shakes and supplements too which is nice. 350 baht each was reasonable." - Rohan</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 FitLife Gym | <a href="privacy_policy.html">Privacy Policy</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Trainers - FitLife Gym</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Basic reset for margin and padding */
+body, h1, h2, h3, p, a, img {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+}
+
+.header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    width: 100%; /* Ensure header spans full width */
+}
+
+.header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.navigation {
+    margin-top: 1rem;
+}
+
+.navigation a {
+    color: #fff;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    flex: 1; /* Make main content take up available space */
+    padding: 2rem;
+    max-width: 1200px; /* Set a maximum width for content */
+    margin: 0 auto; /* Center the content */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.trainers-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem; /* Adjust gap between cards */
+}
+
+.trainer-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.trainer-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.trainer-info {
+    padding: 1rem;
+}
+
+.trainer-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.trainer-info p {
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    width: 100%; /* Ensure footer spans full width */
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.navigation {
+        margin-top: 1rem;
+    }
+
+    .navigation a {
+        color: #fff;
+        margin: 0 1rem;
+        font-weight: bold;
+    }
+
+    .navigation a:hover {
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <div class="header">
+        <h1>FitLife Gym</h1>
+        <div class="navigation">
+            <a href="Home.html">Home</a>
+            <a href="classes.html">Classes</a>
+            <a href="trainers.html">Trainers</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="free_trial.html">Free Trial</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h2>Meet Our Trainers</h2>
+
+        <div class="trainers-container">
+            <!-- Trainer Card 1 -->
+            <div class="trainer-card">
+                <img src="trainer1.jpg" alt="Trainer 1">
+                <div class="trainer-info">
+                    <h3>Ravi Kumar</h3>
+                    <p>Specialty: Strength Training</p>
+                    <p>John is a certified personal trainer with over 10 years of experience in strength training and bodybuilding. His passion is helping clients achieve their fitness goals through personalized training programs.</p>
+                </div>
+            </div>
+
+            <!-- Trainer Card 2 -->
+            <div class="trainer-card">
+                <img src="trainer2.jpg" alt="Trainer 2">
+                <div class="trainer-info">
+                    <h3>Anita Desai</h3>
+                    <p>Specialty: Yoga & Pilates</p>
+                    <p>Jane is an experienced yoga and Pilates instructor who focuses on flexibility and core strength. She offers classes that cater to all levels, from beginners to advanced practitioners.</p>
+                </div>
+            </div>
+
+            <!-- Trainer Card 3 -->
+            <div class="trainer-card">
+                <img src="trainer2.jpg" alt="Trainer 3">
+                <div class="trainer-info">
+                    <h3>Priya Kapoor</h3>
+                    <p>Specialty: Cardio & HIIT</p>
+                    <p>Emily specializes in high-intensity interval training (HIIT) and cardio workouts. Her classes are designed to boost cardiovascular health and increase overall endurance.</p>
+                </div>
+            </div>
+
+            <!-- Trainer Card 4 -->
+            <div class="trainer-card">
+                <img src="trainer1.jpg" alt="Trainer 4">
+                <div class="trainer-info">
+                    <h3>Arjun Patel</h3>
+                    <p>Specialty: Functional Training</p>
+                    <p>Michael’s approach to functional training emphasizes movements that improve daily life. He works with clients to enhance their strength, balance, and coordination through dynamic exercises.</p>
+                </div>
+            </div>
+
+            <!-- Trainer Card 5 -->
+            <div class="trainer-card">
+                <img src="trainer2.jpg" alt="Trainer 5">
+                <div class="trainer-info">
+                    <h3>Aisha Sharma</h3>
+                    <p>Specialty: Nutrition & Wellness</p>
+                    <p>Sarah is a certified nutritionist and wellness coach. She helps clients achieve their health goals through personalized nutrition plans and holistic wellness strategies.</p>
+                </div>
+            </div>
+
+            <!-- Trainer Card 6 -->
+            <div class="trainer-card">
+                <img src="trainer1.jpg" alt="Trainer 6">
+                <div class="trainer-info">
+                    <h3>Rajesh Sharma</h3>
+                    <p>Specialty: Martial Arts</p>
+                    <p>David is a skilled martial arts instructor with a background in various disciplines. His classes focus on self-defense, discipline, and physical conditioning.</p>
+                </div>
+            </div>
+
+            <!-- Trainer Card 7 -->
+            <div class="trainer-card">
+                <img src="trainer2.jpg" alt="Trainer 7">
+                <div class="trainer-info">
+                    <h3>Sunita Rao</h3>
+                    <p>Specialty: Bootcamp & Group Fitness</p>
+                    <p>Laura leads high-energy bootcamp and group fitness classes designed to challenge and motivate participants. Her sessions emphasize teamwork and intense workouts.</p>
+                </div>
+            </div>
+
+            <!-- Trainer Card 8 -->
+            <div class="trainer-card">
+                <img src="trainer1.jpg" alt="Trainer 8">
+                <div class="trainer-info">
+                    <h3>Vikram Singh</h3>
+                    <p>Specialty: Rehabilitation & Injury Prevention</p>
+                    <p>Chris specializes in rehabilitation and injury prevention. He works with clients to recover from injuries and develop programs to prevent future issues.</p>
+                </div>
+            </div>
+
+            <!-- Trainer Card 9 -->
+            <div class="trainer-card">
+                <img src="trainer2.jpg" alt="Trainer 9">
+                <div class="trainer-info">
+                    <h3>Meera Nair</h3>
+                    <p>Specialty: Prenatal & Postnatal Fitness</p>
+                    <p>Amy is an expert in prenatal and postnatal fitness. She provides tailored programs to help new and expecting mothers stay active and healthy.</p>
+                </div>
+            </div>
+
+            <!-- Trainer Card 10 -->
+            <div class="trainer-card">
+                <img src="trainer1.jpg" alt="Trainer 10">
+                <div class="trainer-info">
+                    <h3>Amit Mehta</h3>
+                    <p>Specialty: Endurance Training</p>
+                    <p>Tom focuses on endurance training and long-distance running. He helps clients build stamina and achieve their long-term fitness goals.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 FitLife Gym | <a href="privacy_policy.html">Privacy Policy</a></p>
+    </div>
+</body>
+</html>

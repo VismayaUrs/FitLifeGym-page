@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - FitLife Gym</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Basic reset for margin and padding */
+body, h1, h2, p, a, img {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+}
+
+.header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    width: 100%; /* Ensure header spans full width */
+}
+
+.header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.main-content {
+    flex: 1; /* Make main content take up available space */
+    padding: 2rem;
+    max-width: 1200px; /* Set a maximum width for content */
+    margin: 0 auto; /* Center the content */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    width: 100%; /* Ensure footer spans full width */
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.navigation {
+        margin-top: 1rem;
+    }
+
+    .navigation a {
+        color: #fff;
+        margin: 0 1rem;
+        font-weight: bold;
+    }
+
+    .navigation a:hover {
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <div class="header">
+        <h1>FitLife Gym</h1>
+        <div class="navigation">
+            <a href="Home.html">Home</a>
+            <a href="classes.html">Classes</a>
+            <a href="trainers.html">Trainers</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="free_trial.html">Free Trial</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h2>Gallery</h2>
+
+        <div class="gallery-container">
+            <!-- Gallery Items -->
+            <div class="gallery-item">
+                <img src="gym1.jpg" alt="Gym Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="gym2.jpg" alt="Gym Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="gym3.jpg" alt="Gym Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="gym4.jpg" alt="Gym Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="gym5.jpg" alt="Gym Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="gym6.jpg" alt="Gym Image 6">
+            </div>
+            <div class="gallery-item">
+                <img src="gym7.jpg" alt="Gym Image 7">
+            </div>
+            <div class="gallery-item">
+                <img src="gym8.jpg" alt="Gym Image 8">
+            </div>
+            <div class="gallery-item">
+                <img src="gym9.jpg" alt="Gym Image 9">
+            </div>
+            <div class="gallery-item">
+                <img src="gym10.jpg" alt="Gym Image 10">
+            </div>
+            <div class="gallery-item">
+                <img src="gym11.jpg" alt="Gym Image 11">
+            </div>
+            <div class="gallery-item">
+                <img src="gym12.jpg" alt="Gym Image 12">
+            </div>
+            <div class="gallery-item">
+                <img src="gym13.jpg" alt="Gym Image 13">
+            </div>
+            <div class="gallery-item">
+                <img src="gym14.jpg" alt="Gym Image 14">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 FitLife Gym | <a href="privacy_policy.html">Privacy Policy</a></p>
+    </div>
+</body>
+</html>

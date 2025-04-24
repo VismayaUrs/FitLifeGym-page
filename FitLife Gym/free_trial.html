@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Month Free Trial - FitLife Gym</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Basic reset for margin and padding */
+body, h1, h2, h3, p, a, input, textarea, select, button {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+}
+
+.header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    width: 100%; /* Ensure header spans full width */
+}
+
+.header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.main-content {
+    flex: 1; /* Make main content take up available space */
+    padding: 2rem;
+    max-width: 100%; /* Ensure it spans the full width */
+    background: #fff;
+    border-radius: 0; /* Remove border-radius to avoid rounding at edges */
+    box-shadow: none; /* Remove box-shadow to span full width */
+    margin: 0; /* Remove margin */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.offer-info {
+    margin-bottom: 2rem;
+}
+
+.offer-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.offer-info ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.trial-signup {
+    margin-bottom: 2rem;
+}
+
+.trial-signup h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    
+}
+
+.trial-signup form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea, 
+.form-group select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.trial-signup button {
+    background: #e94e77;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    max-width: 10%;
+}
+
+.trial-signup button:hover {
+    background: #d43f63;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    width: 100%; /* Ensure footer spans full width */
+}
+
+.navigation {
+        margin-top: 1rem;
+    }
+
+    .navigation a {
+        color: #fff;
+        margin: 0 1rem;
+        font-weight: bold;
+    }
+
+    .navigation a:hover {
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <div class="header">
+        <h1>FitLife Gym</h1>
+        <div class="navigation">
+            <a href="Home.html">Home</a>
+            <a href="classes.html">Classes</a>
+            <a href="trainers.html">Trainers</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="free_trial.html">Free Trial</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h2>Special Offer: One Month Free Trial</h2>
+
+        <div class="offer-info">
+            <h3>Get One Month Free When You Pay in Advance!</h3>
+            <p>We are excited to offer a special promotion for new members: pay for 3 months in advance and get an additional month free! This is a great opportunity to experience all that FitLife Gym has to offer and commit to your fitness goals with our full range of facilities and classes.</p>
+            <ul>
+                <li>Access to all gym equipment and facilities.</li>
+                <li>Unlimited participation in group classes.</li>
+                <li>Free fitness assessment and personalized training plan.</li>
+            </ul>
+            <p>Take advantage of this limited-time offer and start your fitness journey with us today!</p>
+        </div>
+
+        <div class="trial-signup">
+            <h3>Sign Up for Your Free Trial</h3>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="payment">Payment Amount (3 months + 1 free):</label>
+                    <input type="text" id="payment" name="payment" value="$300" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="payment-method">Select Payment Method:</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option>---Payment Mode---</option>
+                        <option>Credit Card</option>
+                        <option>Debit Card</option>
+                        <option>PayPal</option>
+                        <option>Bank Transfer</option>
+                        <option>Cash</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Notes:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit">Claim Your Offer</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 FitLife Gym | <a href="privacy_policy.html">Privacy Policy</a></p>
+    </div>
+</body>
+</html>

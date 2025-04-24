@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Strength Training - FitLife Gym</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>/* Basic reset for margin and padding */
+    body, h1, h2, h3, p, a, form, input, textarea, button {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    .header {
+        background: #333;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .header h1 {
+        margin-bottom: 0.5rem;
+    }
+    
+    .main-content {
+        padding: 2rem 1rem;
+        max-width: 800px;
+        margin: 2rem auto;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .main-content h2 {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .main-content p {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .join-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 40%;
+    }
+    
+    .join-form label {
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+    }
+    
+    .join-form input, .join-form textarea {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    
+    .join-form button {
+        background: #e94e77;
+        color: #fff;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        max-width: 30%;
+    }
+    
+    .join-form button:hover {
+        background: #d43f63;
+    }
+    
+    .footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+    
+    .footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .footer a:hover {
+        text-decoration: underline;
+    }
+
+    .navigation {
+        margin-top: 1rem;
+    }
+
+    .navigation a {
+        color: #fff;
+        margin: 0 1rem;
+        font-weight: bold;
+    }
+
+    .navigation a:hover {
+        text-decoration: underline;
+    }
+    </style>
+<body>
+    <div class="header">
+        <h1>FitLife Gym</h1>
+        <div class="navigation">
+            <a href="Home.html">Home</a>
+            <a href="classes.html">Classes</a>
+            <a href="trainers.html">Trainers</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="free_trial.html">Free Trial</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h2>Join Strength Training</h2>
+        <p>Thank you for your interest in the Strength Training class. Please fill out the form below to secure your spot.</p>
+        
+        <form class="join-form">
+            <input type="hidden" name="class" value="Strength Training">
+            
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="message">Additional Information:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            
+            <button type="submit" class="cta-button">Submit</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 FitLife Gym | <a href="privacy_policy.html">Privacy Policy</a></p>
+    </div>
+</body>
+</html>

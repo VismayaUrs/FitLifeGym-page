@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FitLife Gym</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  /* Basic reset for margin and padding */
+body, h1, h2, h3, p, a, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+}
+
+.header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    width: 100%; /* Ensure header spans full width */
+}
+
+.header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.navigation {
+    margin-top: 1rem;
+}
+
+.navigation a {
+    color: #fff;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    flex: 1; /* Make main content take up available space */
+    padding: 2rem;
+    max-width: 100%; /* Ensure it spans the full width */
+    background: #fff;
+    border-radius: 0; /* Remove border-radius to avoid rounding at edges */
+    box-shadow: none; /* Remove box-shadow to span full width */
+    margin: 0; /* Remove margin */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem; /* Reduced space below the heading */
+}
+
+.contact-info {
+    margin-bottom: 1.5rem; /* Reduced space below the contact info section */
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+address {
+    text-align: center;
+    font-style: normal;
+}
+
+.address p {
+    margin-bottom: 0.5rem;
+}
+
+.contact-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contact-form form {
+   /* display: flex;*/
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 30%;
+    padding-left: 35%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+}
+
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background: #e94e77;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    max-width: 30%;
+}
+
+.contact-form button:hover {
+    background: #d43f63;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    width: 100%; /* Ensure footer spans full width */
+}
+
+.navigation {
+        margin-top: 1rem;
+    }
+
+    .navigation a {
+        color: #fff;
+        margin: 0 1rem;
+        font-weight: bold;
+    }
+
+    .navigation a:hover {
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <div class="header">
+        <h1>FitLife Gym</h1>
+        <div class="navigation">
+            <a href="Home.html">Home</a>
+            <a href="classes.html">Classes</a>
+            <a href="trainers.html">Trainers</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="free_trial.html">Free Trial</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h2>Contact Us</h2>
+
+        <div class="contact-info">
+            <h3>Our Location</h3>
+            <address>
+                <p>123 Fitness Avenue</p>
+                <p>Wellness City, HC 45678</p>
+                <p>Email: <a href="mailto:info@fitlifegym.com">info@fitlifegym.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+91 98765-98765</a></p>
+            </address>
+        </div>
+
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 FitLife Gym | <a href="privacy_policy.html">Privacy Policy</a></p>
+    </div>
+</body>
+</html>
